@@ -4,7 +4,7 @@ This lab validates that **vLLM (OpenAI-compatible API server)** can serve **Tech
 
 ---
 
-## What we did
+## STEPS:
 
 - Downloaded and staged the **Llama 3 70B Instruct (AWQ)** model locally.
 - Copied the model folder into the server under:
