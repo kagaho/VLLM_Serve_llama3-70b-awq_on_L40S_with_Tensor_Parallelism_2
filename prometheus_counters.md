@@ -1,4 +1,6 @@
 rteixeira@shockwave:~$ curl -s http://localhost:8002/metrics
+
+```
 # HELP python_gc_objects_collected_total Objects collected during gc
 # TYPE python_gc_objects_collected_total counter
 python_gc_objects_collected_total{generation="0"} 13464.0
@@ -646,10 +648,14 @@ vllm:request_generation_tokens_bucket{engine="0",le="1000.0",model_name="/mnt/sh
 vllm:request_generation_tokens_bucket{engine="0",le="2000.0",model_name="/mnt/shockwave/soundwave/models/llama3-70b-awq"} 1.0
 vllm:request_generation_tokens_bucket{engine="0",le="5000.0",model_name="/mnt/shockwave/soundwave/models/llama3-70b-awq"} 1.0
 vllm:request_generation_tokens_bucket{engine="0",le="+Inf",model_name="/mnt/shockwave/soundwave/models/llama3-70b-awq"} 1.0
-rteixeira@shockwave:~$
-rteixeira@shockwave:~$
+```
+
+
+
+
 rteixeira@shockwave:~$ curl -s http://localhost:8002/metrics | egrep -i \
 'decode|prefill|throughput|tokens|latency|ttft|kv_cache|gpu_cache|scheduler' | head -n 120
+```
 # HELP vllm:kv_cache_usage_perc KV-cache usage. 1 means 100 percent usage.
 # TYPE vllm:kv_cache_usage_perc gauge
 vllm:kv_cache_usage_perc{engine="0",model_name="/mnt/shockwave/soundwave/models/llama3-70b-awq"} 0.0
@@ -770,6 +776,6 @@ vllm:request_max_num_generation_tokens_bucket{engine="0",le="500.0",model_name="
 vllm:request_max_num_generation_tokens_bucket{engine="0",le="1000.0",model_name="/mnt/shockwave/soundwave/models/llama3-70b-awq"} 1.0
 vllm:request_max_num_generation_tokens_bucket{engine="0",le="2000.0",model_name="/mnt/shockwave/soundwave/models/llama3-70b-awq"} 1.0
 vllm:request_max_num_generation_tokens_bucket{engine="0",le="5000.0",model_name="/mnt/shockwave/soundwave/models/llama3-70b-awq"} 1.0
-
+```
 
 
