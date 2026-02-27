@@ -1,4 +1,5 @@
 rteixeira@shockwave:~$ podman exec -it fervent_lovelace vllm collect-env
+```
 Collecting environment information...
 ==============================
         System Info
@@ -161,3 +162,4 @@ PYTORCH_NVML_BASED_CUDA_CHECK=1
 TORCHINDUCTOR_COMPILE_THREADS=1
 TORCHINDUCTOR_CACHE_DIR=/tmp/torchinductor_root
 VLLM_WORKER_MULTIPROC_METHOD=spawn
+```
