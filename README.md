@@ -213,11 +213,11 @@ curl -s http://localhost:8002/v1/models | jq
   "object": "list",
   "data": [
     {
-      "id": "/mnt/elita/soundwave/models/llama3-70b-awq",
+      "id": "/mnt/shockwave/soundwave/models/llama3-70b-awq",
       "object": "model",
       "created": 1772229003,
       "owned_by": "vllm",
-      "root": "/mnt/elita/soundwave/models/llama3-70b-awq",
+      "root": "/mnt/shockwave/soundwave/models/llama3-70b-awq",
       "parent": null,
       "max_model_len": 8192,
       "permission": [
