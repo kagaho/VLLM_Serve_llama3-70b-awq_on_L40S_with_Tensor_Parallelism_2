@@ -1,5 +1,15 @@
 ### Installing AIPerf (Replacement of GenAI-Perf) on container:
 
+- Persistent container:
+```bash
+podman run -d --name aiperf-runner --net=host \
+  --security-opt=label=disable \
+  -v /mnt/elita/soundwave:/mnt/elita/soundwave \
+  python:3.12-slim \
+  bash -lc "python -m pip install -U pip >/dev/null 2>&1 && pip install --only-binary=:all: aiperf >/dev/null 2>&1 && sleep infinity"
+```
+
+
 ```bash
 podman run --rm -it --net=host \
   --security-opt=label=disable \
