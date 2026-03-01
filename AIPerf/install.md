@@ -391,6 +391,7 @@ Usage: aiperf COMMAND
 
 ### NVIDIA AIPerf
 
+```
 ╭─ Commands ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ analyze-trace  Analyze mooncake trace for prefix statistics                                                                                                                                                     │
 │ plot           Generate visualizations from AIPerf profiling data.                                                                                                                                              │
@@ -398,4 +399,4 @@ Usage: aiperf COMMAND
 │ --help (-h)    Display this message and exit.                                                                                                                                                                   │
 │ --version      Display application version.                                                                                                                                                                     │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-rteixeira@elita:/mnt/elita/soundwave/playground$
+```
