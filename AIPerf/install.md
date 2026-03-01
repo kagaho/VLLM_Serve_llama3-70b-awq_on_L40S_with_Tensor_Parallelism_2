@@ -10,6 +10,7 @@ podman run -d --name aiperf-runner --net=host \
   bash -lc "python -m pip install -U pip >/dev/null 2>&1 && pip install --only-binary=:all: aiperf >/dev/null 2>&1 && sleep infinity"
 ```
 
+  
 $ podman exec -it aiperf-runner bash
 ```
 root@elita:/# aiperf --help
