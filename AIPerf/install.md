@@ -1,4 +1,6 @@
-### Installing AIPerf (Replacement of GenAI-Perf) on container:
+### Installing AIPerf (Replacement of GenAI-Perf) on container:  
+
+- Reference: https://github.com/ai-dynamo/aiperf
 
 - Persistent container:
     
